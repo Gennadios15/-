@@ -1,4 +1,4 @@
-                                                              Τρίτη 14/3/2023
+                                                              Δευτέρα 20/3/2023
                                                               
 Συμμετέχοντες:
 
@@ -7,6 +7,6 @@
 * [Βασιλόπουλος Ηρακλής](https://github.com/IraklisVas)
 * [Χριστοφή Γεννάδιος](https://github.com/Gennadios15)
 * [Πολυζωίδης Γεώργιος](https://github.com/georgepol01)
-* Ντόστι Μάριος
+* [Ντόστι Μάριος](https://github.com/mariossD)
 
 Δραστηριότητες:
