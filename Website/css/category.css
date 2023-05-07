@@ -1,8 +1,8 @@
 .cssTitle{
     position: absolute;
     width: 373px;
-    height: 21px;
-    left: 35%;
+    height: 10px;
+    left: 42%;
     top: 100px;
 
     font-family: 'Roboto';
@@ -14,8 +14,11 @@
 
 .categoryButons{
     position: absolute;
-    width: 958px;
-    left: -9%;
+    width: 100%;
+    min-width: 1300px;
+    max-width: 100%;
+    height: 1000px;
+    left: 0%;
     top: 0%;
 }
 
@@ -23,7 +26,7 @@
     position: absolute;
     width: 243px;
     height: 143px;
-    left: 20%;
+    left: 5%;
     top: 220px;
 }
 
@@ -59,7 +62,7 @@
     position: absolute;
     width: 145px;
     height: 143px;
-    left: 45%;
+    left: 25%;
     top: 220px;
 }
 
@@ -95,7 +98,7 @@
     position: absolute;
     width: 162px;
     height: 132px;
-    left: 70%;
+    left:45%;
     top: 220px;
 
 }
@@ -133,7 +136,7 @@
     position: absolute;
     width: 243px;
     height: 143px;
-    left: 95%;
+    left: 65%;
     top: 220px;
 }
 
@@ -142,7 +145,7 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    left: 40px;
+    left: 45px;
     top: 0px;
     background: #E6E6E6;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
@@ -172,7 +175,7 @@
     position: absolute;
     width: 145px;
     height: 143px;
-    left: 120%;
+    left: 85%;
     top: 220px;
 }
 
@@ -210,7 +213,7 @@
     position: absolute;
     width: 178px;
     height: 134px;
-    left: 20%;
+    left: 5%;
     top: 401px;
 }
 
@@ -248,7 +251,7 @@
     position: absolute;
     width: 145px;
     height: 143px;
-    left: 45%;
+    left: 25%;
     top: 401px;
 
 }
@@ -287,7 +290,7 @@
     position: absolute;
     width: 178px;
     height: 134px;
-    left: 70%;
+    left: 45%;
     top: 401px;
 }
 
@@ -325,7 +328,7 @@
     position: absolute;
     width: 243px;
     height: 143px;
-    left: 95%;
+    left: 65%;
     top: 401px;
 }
 
@@ -363,7 +366,7 @@
     position: absolute;
     width: 145px;
     height: 143px;
-    left: 120%;
+    left: 85%;
     top: 401px;
 }
 
@@ -401,7 +404,7 @@
     position: absolute;
     width: 178px;
     height: 138px;
-    left: 31%;
+    left: 15%;
     top: 593px;
 }
 
@@ -439,7 +442,7 @@
     position: absolute;
     width: 178px;
     height: 138px;
-    left: 56%;
+    left: 35%;
     top: 593px;
 }
 
@@ -477,7 +480,7 @@
     position: absolute;
     width: 243px;
     height: 147px;
-    left: 81%;
+    left: 55%;
     top: 593px;
 }
 
@@ -515,7 +518,7 @@
     position: absolute;
     width: 145px;
     height: 147px;
-    left: 106%;
+    left: 75%;
     top: 593px;
 
 }

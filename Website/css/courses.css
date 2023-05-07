@@ -4,7 +4,7 @@ body{
 .divFilters {
     position: absolute;
     left: auto;
-    top: 80px;
+    top: 100px;
     left: 50px;
     width: 250px;
     height: 100%;
@@ -78,8 +78,8 @@ body{
     position: absolute;
     width: 421px;
     height: 21px;
-    left: 731px;
-    top: 23px;
+    left: 45%;
+    top: 73px;
 
     font-family: 'Roboto';
     font-style: normal;

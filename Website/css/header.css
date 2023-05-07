@@ -2,7 +2,7 @@
 body {
   font-size: 13px;
   font-family: Roboto;
-  font-weight: Regular;
+  
 
 }
 .cssHeader {
@@ -17,7 +17,9 @@ body {
   background: linear-gradient(rgba(56,132,222,1), rgba(96,181,229,1));
 }
 .cssEgrafi {
-  width: 94px;
+  width: 100%;
+  min-width: 84px;
+  max-width: 8%;
   height: 35px;
   position: absolute;
   top: 24px;
@@ -32,11 +34,13 @@ body {
   text-align: center; 
 }
 .cssSindesi {
-  width: 91px;
+  width: 100%;
+  min-width: 84px;
+  max-width: 8%;
   height: 35px;
   position: absolute;
   top: 24px;
-  left: 82%;
+  left: 81.6%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -50,7 +54,7 @@ body {
   height: 39px;
   position: absolute;
   top: 21px;
-  left: 40%;
+  left: 44%;
   color: rgba(255,255,255,1);
   font-weight: Bold;
   font-size: 16px;
