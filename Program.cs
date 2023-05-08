@@ -1,7 +1,10 @@
+global using UniCalendar.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<UnicalendarDbContext>();
 
 var app = builder.Build();
 

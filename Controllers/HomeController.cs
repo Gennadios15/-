@@ -38,6 +38,11 @@ namespace UniCalendar.Controllers
             return View();
         }
 
+        public IActionResult HeaderLogIn()
+        {
+            return View();
+        }
+
         public IActionResult Footer()
         {
             return View();
