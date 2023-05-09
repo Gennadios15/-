@@ -13,7 +13,7 @@
 }
 
 .categoryButons{
-    position: absolute;
+    position: fixed;
     width: 100%;
     min-width: 1300px;
     max-width: 100%;
