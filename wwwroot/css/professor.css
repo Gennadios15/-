@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto';
+    
 }
 .divFilters {
     position: absolute;
@@ -8,8 +9,8 @@ body{
     left: 50px;
     width: 250px;
     height: 100%;
-    
-  }
+    z-index: -1;
+}
   .txtfiltra{
     position: absolute;
     width: 94px;

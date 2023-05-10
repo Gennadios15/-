@@ -14,6 +14,7 @@ ul {
 .menu li a img {
     float: left;
     margin-top: -3px;
+    
 }
 
 .wrapper {
@@ -51,7 +52,7 @@ ul {
 
     .menu li {
         padding: 10px;
-        margin-left: -18px;
+        margin-left: -10px;
         border-bottom: 1px solid #DEE1E7;
     }
 
