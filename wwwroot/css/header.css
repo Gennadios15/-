@@ -17,6 +17,7 @@ body {
   background: linear-gradient(rgba(56,132,222,1), rgba(96,181,229,1));
   z-index: -1;
 }
+
 .cssEgrafi {
   width: 100%;
   min-width: 84px;

@@ -68,7 +68,7 @@
     max-width: 100%;
     height: 150px;
     position: absolute;
-    top: 48px;
+    top: 1048px;
     left: 5%;
     
   }
@@ -78,9 +78,9 @@
     min-width: 1300px;
     max-width: 100%;
     height: 100%;
-    min-height: 440px;
+    min-height: 1540px;
     max-height: 100%;
-    position: fixed;
+    position: absolute;
     top: 520px;
     left: 0px;
     background: rgba(255,255,255,1);
@@ -90,7 +90,7 @@
     width: 92px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 242px;
+    top: 1242px;
     left: 5.9%;
     font-family: Roboto;
     font-weight: Bold;
@@ -101,7 +101,7 @@
     width: 117px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 242px;
+    top: 1242px;
     left: 32.4%;
     font-family: Roboto;
     font-weight: Bold;
@@ -112,7 +112,7 @@
     width: 161px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 244px;
+    top: 1244px;
     left: 59.5%;
     font-family: Roboto;
     font-weight: Bold;
@@ -123,7 +123,7 @@
     width: 145px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 244px;
+    top: 1244px;
     left: 85%;
     font-family: Roboto;
     font-weight: Bold;
@@ -136,7 +136,7 @@
     height: 400px;
     color: rgba(95,95,95,1);
     position: absolute;
-    top: 291px;
+    top: 1291px;
     left: 3.5%;
     font-family: Roboto;
     font-weight: Regular;
@@ -148,7 +148,7 @@
     height: 400px;
     color: rgba(95,95,95,1);
     position: absolute;
-    top: 291px;
+    top: 1291px;
     left: 30.5%;
     font-family: Roboto;
     font-weight: Regular;
@@ -160,7 +160,7 @@
     height: 400px;
     color: rgba(95,95,95,1);
     position: absolute;
-    top: 291px;
+    top: 1291px;
     left: 59%;
     font-family: Roboto;
     font-weight: Regular;
@@ -172,7 +172,7 @@
     height: 400px;
     color: rgba(95,95,95,1);
     position: absolute;
-    top: 291px;
+    top: 1291px;
     left: 84%;
     font-family: Roboto;
     font-size: 150%;
@@ -278,7 +278,7 @@
     min-width: 1000px;
     max-width: 100%;
     height: 90px;
-    position: fixed;
+    position: absolute;
     top: 410px;
     left: 0%;
     background: rgba(217,217,217,1);
@@ -296,11 +296,11 @@
 .embeddedCalendar {
     width: 100%;
     min-width: 1300px;
-    max-width: 100%;
+    max-width: 70%;
     height: 50px;
     position: absolute;
     top: 20px;
-    left: 13%;
+    left: 17%;
 }
 
 
