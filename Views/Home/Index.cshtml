@@ -12,66 +12,14 @@
     <link href="~/css/footer.css" rel="stylesheet" />
     <title>UniCalendar</title>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
-
+    <script src="~/js/JavaScript.js"></script>
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="btn" onclick="show()">
-                <img src="~/images/burgermenu.svg">
-            </div>
+    
 
-        </div>
-
-    </div>
-
-    <ul class="menu" id="slide">
-        <li>
-            <img class="searchInput" style="top:2px" src="~/images/burgersearch.svg">
-            <input placeholder="Αναζήτηση"></input>
-
-        </li>
-        <li>
-            <a href="home.html">
-                <img src="~/images/burgerhome.svg">
-                <span>Αρχική σελίδα</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="~/images/burgerschool.svg">
-                <span>Σχολές</span>
-
-            </a>
-        </li>
-        <li>
-            <a href="courses.html">
-                <img src="~/images/burgerlessons.svg">
-                <span>Μαθήματα</span>
-
-            </a>
-        </li>
-        <li>
-            <a href="professor.html">
-                <span>Καθηγητές</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="~\images\burgercontactsupport.svg">
-                <span>Βοήθεια και επικοινωνία</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="~\images\burgerinfo.svg">
-                <span>Σχετικά με εμάς</span>
-            </a>
-        </li>
-    </ul>
-
+   
     <div>
         <img class="cssImg" src="~/images/home.png">
     </div>
@@ -126,7 +74,7 @@
 
     </div>
     <div class="cssHeader">
-
+        @Html.Partial("Burgermenu")
         <div class="cssEgrafi">
 
             <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
@@ -159,14 +107,3 @@
     </div>
 </body>
 </html>
-<script>
-    function show() {
-        console.log("Im inside show")
-        document.getElementById("slide").classList.toggle("showmenu");
-        /*show1();}
-
-        function show1(){
-        console.log("Im inside show1")
-        document.getElementById("slide").classList.toggle("showmenu1")}*/}
-
-</script>
