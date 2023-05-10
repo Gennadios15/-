@@ -10,69 +10,14 @@
     <link href="~/css/home.css" rel="stylesheet" />
     <link href="~/css/header.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
-    <link href="~/css/burgermenu.css" rel="stylesheet" />
     <title>UniCalendar</title>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
-    <script src="~/js/JavaScript.js"></script>
+    <script src="~/js/Burgermenu.js"></script>
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="btn" onclick="show()">
-                <img src="~/images/burgermenuwhite.svg">
-            </div>
-
-        </div>
-
-    </div>
-
-    <ul class="menu" id="slide">
-        <li>
-            <img style="float:left;  margin-right: 15px;" src="~/images/burgersearch.svg">
-            <input class="searchInput" placeholder="Αναζήτηση"></input>
-
-        </li>
-        <li>
-            <a href="/Home/Index">
-                <img src="~/images/burgerhome.svg">
-                <span>Αρχική σελίδα</span>
-            </a>
-        </li>
-        <li>
-            <a href="/Home/Category">
-                <img src="~/images/burgerschool.svg">
-                <span>Σχολές</span>
-
-            </a>
-        </li>
-        <li>
-            <a href="/Home/Courses">
-                <img src="~/images/burgerlessons.svg">
-                <span>Μαθήματα</span>
-
-            </a>
-        </li>
-        <li>
-            <a href="/Home/Professor">
-                <img src="~/images/burgerprofessor.svg">
-                <span>Καθηγητές</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="~/images/burgercontactsupport.svg">
-                <span>Βοήθεια και επικοινωνία</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="~/images/burgerinfo.svg">
-                <span>Σχετικά με εμάς</span>
-            </a>
-        </li>
-    </ul>
+   
 
 
    
@@ -132,6 +77,7 @@
 
     </div>
     <div class="cssHeader">
+        @Html.Partial("Burgermenu")
         <div class="cssEgrafi">
 
             <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
