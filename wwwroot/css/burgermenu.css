@@ -1,5 +1,5 @@
-ul{
-    list-style-type: none;
+ ul{
+     list-style-type: none;
   }
   
   
@@ -83,6 +83,7 @@ ul{
   
   .searchInput{
     
+.searchInput {
     width: 160px;
     height: 0px;
     left: 12px;
@@ -92,4 +93,5 @@ ul{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    
   }
