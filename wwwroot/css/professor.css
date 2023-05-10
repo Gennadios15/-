@@ -1,7 +1,6 @@
-body {
+body{
     font-family: 'Roboto';
 }
-
 .divFilters {
     position: absolute;
     left: auto;
@@ -9,9 +8,9 @@ body {
     left: 50px;
     width: 250px;
     height: 100%;
-}
-
-.txtfiltra {
+    
+  }
+  .txtfiltra{
     position: absolute;
     width: 94px;
     height: 16px;
@@ -21,49 +20,48 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-}
+  }
 
-.imgFiltra {
+  .imgFiltra{
     position: absolute;
     top: 10px;
-    left: 10px;
-}
+    left:10px;
+  }
 
-.divTitle {
+  .divTitle{
     border: 1px solid grey;
     height: 10%;
-}
+  }
 
-.divMathima {
+  .divMathima{
     border: 1px solid grey;
     height: 40%;
-}
-
-.divEpistimoniko {
+  }
+  .divEpistimoniko{
     border: 1px solid grey;
     height: 40%;
-}
-
-.divPanepistimio {
+  }
+  .divPanepistimio{
     border: 1px solid grey;
     height: 40%;
-}
-
-.cssTxtTitles {
+  }
+  
+  .cssTxtTitles{
     position: absolute;
-    left: 10px;
+    left:10px;
     font-weight: bold;
-}
-
-.cssKathigitestxt {
+  }
+  .cssKathigitestxt{
+    
     position: absolute;
     width: 421px;
     height: 21px;
     left: 45%;
     top: 73px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
-}
+  }

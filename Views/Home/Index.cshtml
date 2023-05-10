@@ -10,6 +10,7 @@
     <link href="~/css/home.css" rel="stylesheet" />
     <link href="~/css/header.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
+    <link href="~/css/burgermenu.css" rel="stylesheet" />
     <title>UniCalendar</title>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
 
@@ -17,10 +18,13 @@
 </head>
 
 <body>
+    <div class="embeddedCalendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&bgcolor=%23039BE5&ctz=UTC&showNav=1&showTitle=0&showDate=1&showPrint=0&showCalendars=0&src=ODY2MzVkYmUwNDAyYTE2MmI1Njk2YzA3ZmY0ZjQ5ZDgzYTJiNjQ1Mjc3ODY2MGZjNTc3MDMzNjFlMTgzNWI1OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161" style="border-width:0" width="1400" height="800" frameborder="0" scrolling="no"></iframe>
+    </div>
     <div class="wrapper">
         <div class="container">
             <div class="btn" onclick="show()">
-                <img src="~/images/burgermenu.svg">
+                <img src="~/images/burgermenuwhite.svg">
             </div>
 
         </div>
@@ -29,44 +33,45 @@
 
     <ul class="menu" id="slide">
         <li>
-            <img class="searchInput" style="top:2px" src="~/images/burgersearch.svg">
-            <input placeholder="Αναζήτηση"></input>
+            <img style="float:left;  margin-right: 15px;" src="~/images/burgersearch.svg">
+            <input class="searchInput" placeholder="Αναζήτηση"></input>
 
         </li>
         <li>
-            <a href="home.html">
+            <a href="/Home/Index">
                 <img src="~/images/burgerhome.svg">
                 <span>Αρχική σελίδα</span>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="/Home/Category">
                 <img src="~/images/burgerschool.svg">
                 <span>Σχολές</span>
 
             </a>
         </li>
         <li>
-            <a href="courses.html">
+            <a href="/Home/Courses">
                 <img src="~/images/burgerlessons.svg">
                 <span>Μαθήματα</span>
 
             </a>
         </li>
         <li>
-            <a href="professor.html">
+            <a href="/Home/Professor">
+                <img src="~/images/burgerprofessor.svg">
                 <span>Καθηγητές</span>
             </a>
         </li>
         <li>
             <a href="#">
-                <img src="~\images\burgercontactsupport.svg">
+                <img src="~/images/burgercontactsupport.svg">
                 <span>Βοήθεια και επικοινωνία</span>
             </a>
         </li>
         <li>
             <a href="#">
-                <img src="~\images\burgerinfo.svg">
+                <img src="~/images/burgerinfo.svg">
                 <span>Σχετικά με εμάς</span>
             </a>
         </li>
@@ -126,6 +131,8 @@
 
     </div>
     <div class="cssHeader">
+
+
 
         <div class="cssEgrafi">
 
