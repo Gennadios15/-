@@ -10,6 +10,7 @@
     <link href="~/css/home.css" rel="stylesheet" />
     <link href="~/css/header.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
+    <link href="~/css/burgermenu.css" rel="stylesheet" />
     <title>UniCalendar</title>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
     <script src="~/js/JavaScript.js"></script>
@@ -17,7 +18,68 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     
+=======
+    <div class="embeddedCalendar">
+        <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&bgcolor=%23039BE5&ctz=UTC&showNav=1&showTitle=0&showDate=1&showPrint=0&showCalendars=0&src=ODY2MzVkYmUwNDAyYTE2MmI1Njk2YzA3ZmY0ZjQ5ZDgzYTJiNjQ1Mjc3ODY2MGZjNTc3MDMzNjFlMTgzNWI1OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161" style="border-width:0" width="1400" height="800" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="btn" onclick="show()">
+                <img src="~/images/burgermenuwhite.svg">
+            </div>
+
+        </div>
+
+    </div>
+
+    <ul class="menu" id="slide">
+        <li>
+            <img style="float:left;  margin-right: 15px;" src="~/images/burgersearch.svg">
+            <input class="searchInput" placeholder="Αναζήτηση"></input>
+
+        </li>
+        <li>
+            <a href="/Home/Index">
+                <img src="~/images/burgerhome.svg">
+                <span>Αρχική σελίδα</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Category">
+                <img src="~/images/burgerschool.svg">
+                <span>Σχολές</span>
+
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Courses">
+                <img src="~/images/burgerlessons.svg">
+                <span>Μαθήματα</span>
+
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Professor">
+                <img src="~/images/burgerprofessor.svg">
+                <span>Καθηγητές</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="~/images/burgercontactsupport.svg">
+                <span>Βοήθεια και επικοινωνία</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="~/images/burgerinfo.svg">
+                <span>Σχετικά με εμάς</span>
+            </a>
+        </li>
+    </ul>
+>>>>>>> 730555bcb7b3adfe7ac0cf2b419aa098ef502722
 
    
     <div>
@@ -74,7 +136,13 @@
 
     </div>
     <div class="cssHeader">
+<<<<<<< HEAD
         @Html.Partial("Burgermenu")
+=======
+
+
+
+>>>>>>> 730555bcb7b3adfe7ac0cf2b419aa098ef502722
         <div class="cssEgrafi">
 
             <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>

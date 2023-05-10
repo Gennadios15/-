@@ -1,9 +1,10 @@
-.cssTitle {
+.cssTitle{
     position: absolute;
     width: 373px;
     height: 10px;
     left: 42%;
     top: 100px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -11,8 +12,8 @@
     line-height: 20px;
 }
 
-.categoryButons {
-    position: absolute;
+.categoryButons{
+    position: fixed;
     width: 100%;
     min-width: 1300px;
     max-width: 100%;
@@ -21,7 +22,7 @@
     top: 0%;
 }
 
-.humanities {
+.humanities{
     position: absolute;
     width: 243px;
     height: 143px;
@@ -29,7 +30,8 @@
     top: 220px;
 }
 
-.btnHumanities {
+.btnHumanities{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -38,9 +40,11 @@
     background: #E6E6E6;
     border-radius: 20px;
     border: none;
+
 }
 
-.txtHumanities {
+.txtHumanities{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -51,9 +55,10 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.agriculture {
+.agriculture{
     position: absolute;
     width: 145px;
     height: 143px;
@@ -61,7 +66,8 @@
     top: 220px;
 }
 
-.btnAgriculture {
+.btnAgriculture{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -73,7 +79,8 @@
     border: none;
 }
 
-.txtAgriculture {
+.txtAgriculture{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -84,17 +91,20 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
+.media{ 
 
-.media {
     position: absolute;
     width: 162px;
     height: 132px;
-    left: 45%;
+    left:45%;
     top: 220px;
+
 }
 
-.btnMedia {
+.btnMedia{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -104,9 +114,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtMedia {
+.txtMedia{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -117,9 +129,10 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.business {
+.business{      
     position: absolute;
     width: 243px;
     height: 143px;
@@ -127,7 +140,8 @@
     top: 220px;
 }
 
-.btnBusiness {
+.btnBusiness{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -137,9 +151,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtBusiness {
+.txtBusiness{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -151,9 +167,11 @@
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+    
 }
 
-.education {
+.education{
+
     position: absolute;
     width: 145px;
     height: 143px;
@@ -161,7 +179,8 @@
     top: 220px;
 }
 
-.btnEducation {
+.btnEducation{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -171,9 +190,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtEducation {
+.txtEducation{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -184,9 +205,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.physedu {
+.physedu{
+
     position: absolute;
     width: 178px;
     height: 134px;
@@ -194,7 +217,8 @@
     top: 401px;
 }
 
-.btnPhysedu {
+.btnPhysedu{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -204,9 +228,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtPhysedu {
+.txtPhysedu{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -217,17 +243,21 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
 .science {
+
     position: absolute;
     width: 145px;
     height: 143px;
     left: 25%;
     top: 401px;
+
 }
 
-.btnScience {
+.btnScience{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -237,9 +267,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtScience {
+.txtScience{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -250,9 +282,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.medicine {
+.medicine{
+
     position: absolute;
     width: 178px;
     height: 134px;
@@ -260,7 +294,8 @@
     top: 401px;
 }
 
-.btnMedicine {
+.btnMedicine{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -270,9 +305,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtMedicine {
+.txtMedicine{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -283,9 +320,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.engineering {
+.engineering{
+
     position: absolute;
     width: 243px;
     height: 143px;
@@ -293,7 +332,8 @@
     top: 401px;
 }
 
-.btnEngineering {
+.btnEngineering{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -303,9 +343,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtEngineering {
+.txtEngineering{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -316,9 +358,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
 .law {
+
     position: absolute;
     width: 145px;
     height: 143px;
@@ -326,7 +370,8 @@
     top: 401px;
 }
 
-.btnLaw {
+.btnLaw{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -336,9 +381,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtLaw {
+.txtLaw{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -349,9 +396,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.finance {
+.finance{
+
     position: absolute;
     width: 178px;
     height: 138px;
@@ -359,7 +408,8 @@
     top: 593px;
 }
 
-.btnFinance {
+.btnFinance{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -369,9 +419,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtFinance {
+.txtFinance{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -382,9 +434,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.computer {
+.computer{
+
     position: absolute;
     width: 178px;
     height: 138px;
@@ -392,7 +446,8 @@
     top: 593px;
 }
 
-.btnComputer {
+.btnComputer{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -402,9 +457,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtComputer {
+.txtComputer{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -415,9 +472,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.arts {
+.arts{
+
     position: absolute;
     width: 243px;
     height: 147px;
@@ -425,7 +484,8 @@
     top: 593px;
 }
 
-.btnArts {
+.btnArts{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -435,9 +495,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtArts {
+.txtArts{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -448,17 +510,21 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
 
-.tourism {
+.tourism{
+
     position: absolute;
     width: 145px;
     height: 147px;
     left: 75%;
     top: 593px;
+
 }
 
-.btnTourism {
+.btnTourism{
+    
     position: absolute;
     width: 80px;
     height: 80px;
@@ -468,9 +534,11 @@
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border: none;
+
 }
 
-.txtTourism {
+.txtTourism{
+    
     position: absolute;
     width: 243px;
     height: 22px;
@@ -481,4 +549,5 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    
 }
