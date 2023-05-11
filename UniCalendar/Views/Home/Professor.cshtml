@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Professor";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/header.css" rel="stylesheet" />
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <link href="~/css/professor.css" rel="stylesheet" />
+    <script src="~/js/Burgermenu.js"></script>
+    <title>Καθηγητές</title>
+    <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
+
+</head>
+<body>
+    <script src="~/js/JavaScript.js"></script>
+    <div>
+
+        <div class="divFilters">
+            <div class="divTitle">
+                <img class="imgFiltra" src="~/images/filters.png">
+                <p class="txtfiltra">Φίλτρα</p>
+            </div>
+            <div class="divMathima">
+                <p class="cssTxtTitles">Μάθημα</p>
+            </div>
+            <div class="divEpistimoniko">
+                <p class="cssTxtTitles">Επιστημονικό Πεδίο</p>
+            </div>
+            <div class="divPanepistimio">
+                <p class="cssTxtTitles">Πανεπιστήμιο</p>
+            </div>
+
+        </div>
+    </div>
+    <p class="cssKathigitestxt">Καθηγητές</p>
+
+
+    <div class="cssHeader">
+        @Html.Partial("Burgermenu")
+        <div class="cssEgrafi">
+
+            <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
+        </div>
+        <div class="cssSindesi">
+
+            <span style="width:100%; min-width: 30%; max-width: 8%; top: 10px; left: 33%; position: absolute; ">Σύνδεση</span>
+        </div>
+        <div class="cssUnicalendar">
+
+            <span style="width: 65px; top: 3px; left: 49px; position: absolute;">UniCalendar</span>
+
+            <div class="cssLogo"></div>
+
+
+        </div>
+    </div>
+    <div class="cssFooter">
+
+        <div class="cssFacebook">
+            <a href="http://www.facebook.com" title="facebook" class="fa fa-facebook" target="_blank">  </a>
+        </div>
+        <div class="cssInsta">
+            <a href="http://www.instagram.com" title="instgram" class="fa fa-instagram" target="_blank"></a>
+        </div>
+        <div class="cssTwitter">
+            <a href="http://www.twitter.com" title="twitter" class="fa fa-twitter" target="_blank"></a>
+        </div>
+
+    </div>
+</body>
+</html>

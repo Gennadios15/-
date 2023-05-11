@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/Burgermenu.css" rel="stylesheet" />
+    <link href="~/css/home.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="btn" onclick="show()">
+                <img src="~/images/burgermenuwhite.svg">
+            </div>
+
+        </div>
+
+    </div>
+
+    <ul class="menu" id="slide">
+        <li>
+            <img  style="float:left;  margin-right: 15px;" src="~/images/burgersearch.svg">
+            <input style="margin-top: -4px" class="searchInput"  placeholder="Αναζήτηση"></input>
+
+        </li>
+        <li>
+            <a href="/Home/Index">
+                <img src="~/images/burgerhome.svg">
+                <span>Αρχική σελίδα</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Category">
+                <img src="~/images/burgerschool.svg">
+                <span>Σχολές</span>
+
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Courses">
+                <img src="~/images/burgerlessons.svg">
+                
+                <span>Μαθήματα</span>
+
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Professor">
+                <img style="height:24px; width:24px;" src="~/images/burgerprofessor.svg">
+                <span>Καθηγητές</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="~/images/burgercontactsupport.svg">
+                <span>Βοήθεια και επικοινωνία</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="~/images/burgerinfo.svg">
+                <span>Σχετικά με εμάς</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

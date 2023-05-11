@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Category";
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/css/category.css" rel="stylesheet" />
+    <link href="~/css/header.css" rel="stylesheet" />
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <title>Κατηγορίες</title>
+    <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
+    <script src="~/js/Burgermenu.js"></script>
+
+</head>
+<body>
+    <p class="cssTitle">Επιλέξτε κατηγορία μαθημάτων:</p>
+    <div class="categoryButons">
+        <div class="humanities">
+            <button class="btnHumanities">
+                <img src="~/images/humanities.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtHumanities">Ανθρωπιστικές Επιστήμες</p>
+        </div>
+        <div class="agriculture">
+            <button class="btnAgriculture">
+                <img src="~/images/agriculture.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtAgriculture">Γεωργία & Δασοκομία</p>
+        </div>
+        <div class="media">
+            <button class="btnMedia">
+                <img src="~/images/media.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtMedia">Δημοσιογραφία & Media</p>
+        </div>
+        <div class="business">
+            <button class="btnBusiness">
+                <img src="~/images/business.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtBusiness">
+                Διοίκηση Επιχειρήσεων<br>
+                & <br>
+                Marketing
+            </p>
+        </div>
+        <div class="education">
+            <button class="btnEducation">
+                <img src="~/images/school.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtEducation">Εκπαίδευση</p>
+        </div>
+        <div class="physedu">
+            <button class="btnPhysedu">
+                <img src="~/images/sports.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtPhysedu">Επιστήμη Φυσικής Αγωγής</p>
+        </div>
+        <div class="science">
+            <button class="btnScience">
+                <img src="~/images/science.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtScience">Θετικές Επιστήμες</p>
+        </div>
+        <div class="medicine">
+            <button class="btnMedicine">
+                <img src="~/images/medicine.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtMedicine">Ιατρική</p>
+        </div>
+        <div class="engineering">
+            <button class="btnEngineering">
+                <img src="~/images/engineering.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtEngineering">Μηχανική </p>
+        </div>
+        <div class="law">
+            <button class="btnLaw">
+                <img src="~/images/law.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtLaw">Νομική </p>
+        </div>
+        <div class="finance">
+            <button class="btnFinance">
+                <img src="~/images/finance.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtFinance">Οικονομικές Επιστήμες</p>
+        </div>
+        <div class="computer">
+            <button class="btnComputer">
+                <img src="~/images/computer.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtComputer">Πληροφορική & Τεχνολογία</p>
+        </div>
+        <div class="arts">
+            <button class="btnArts">
+                <img src="~/images/arts.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtArts">Τέχνη</p>
+        </div>
+        <div class="tourism">
+            <button class="btnTourism">
+                <img src="~/images/tourism.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtTourism">Τουρισμός</p>
+        </div>
+    </div>
+
+
+    <div class="cssHeader">
+        @Html.Partial("Burgermenu")
+        <div class="cssEgrafi">
+
+            <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
+        </div>
+        <div class="cssSindesi">
+
+            <span style="width:100%; min-width: 30%; max-width: 8%; top: 10px; left: 33%; position: absolute; ">Σύνδεση</span>
+        </div>
+        <div class="cssUnicalendar">
+
+            <span style="width: 65px; top: 3px; left: 49px; position: absolute;">UniCalendar</span>
+
+            <div class="cssLogo"></div>
+
+
+        </div>
+    </div>
+
+    <div class="cssFooter">
+
+        <div class="cssFacebook">
+            <a href="http://www.facebook.com" title="facebook" class="fa fa-facebook" target="_blank">  </a>
+        </div>
+        <div class="cssInsta">
+            <a href="http://www.instagram.com" title="instgram" class="fa fa-instagram" target="_blank"></a>
+        </div>
+        <div class="cssTwitter">
+            <a href="http://www.twitter.com" title="twitter" class="fa fa-twitter" target="_blank"></a>
+        </div>
+
+</body>
+</html>
