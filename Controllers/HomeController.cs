@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ImportData.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using UniCalendar.Models;
 
@@ -44,6 +45,11 @@ namespace UniCalendar.Controllers
         }
 
         public IActionResult Footer()
+        {
+            return View();
+        }
+
+        public IActionResult ImportEvents()
         {
             return View();
         }
