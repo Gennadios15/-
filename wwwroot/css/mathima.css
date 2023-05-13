@@ -1,8 +1,7 @@
-body {
+body{
     font-family: 'Roboto';
 }
-
-.cssMathima {
+.cssMathima{
     position: absolute;
     left: auto;
     top: 60px;
@@ -11,9 +10,11 @@ body {
     min-width: 1000px;
     max-width: 90%;
     height: 100%;
+    
+    
 }
 
-.cssMathimaTitle {
+.cssMathimaTitle{
     position: absolute;
     width: 94px;
     height: 16px;
@@ -23,16 +24,17 @@ body {
     font-weight: 700;
     font-size: 1.3vw;
     line-height: 23px;
-}
+  }
 
-.cssMathimaDesc {
+  .cssMathimaDesc{
     position: absolute;
-    left: 45px;
+    left:45px;
     line-height: 1.6;
-    font-size: 1vw;
-}
+    font-size:1vw;
+    
+  }
 
-.buttonEggrafi {
+  .buttonEggrafi{
     position: absolute;
     width: 80%;
     min-width: 74px;
@@ -46,5 +48,5 @@ body {
     line-height: 23px;
     text-align: center;
     color: #FFFFFF;
-    left: 40px;
-}
+    left:40px;
+  }
