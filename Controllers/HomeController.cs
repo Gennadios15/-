@@ -1,9 +1,5 @@
-﻿using Google.Apis.Auth.OAuth2;
-using ImportData.Controllers;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using UniCalendar.Models;
 
 namespace UniCalendar.Controllers
 {
