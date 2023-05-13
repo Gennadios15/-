@@ -7,14 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\Home\mathima.php" />
+    <Content Remove="wwwroot\js\Authorize.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Views\Home\mathima.php" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Include="wwwroot\js\Authorize.js" />
     <None Include="wwwroot\js\Burgermenu.js" />
   </ItemGroup>
 

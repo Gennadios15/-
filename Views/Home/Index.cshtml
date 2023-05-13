@@ -15,20 +15,11 @@
     <script src="~/js/Burgermenu.js"></script>
 
 </head>
-
 <body>
-   
-
-
-   
     <div>
         <img class="cssImg" src="~/images/home.png">
     </div>
-
     <div class="cssDescription">
-        <div class="embeddedCalendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&bgcolor=%23039BE5&ctz=UTC&showNav=1&showTitle=0&showDate=1&showPrint=0&showCalendars=0&src=ODY2MzVkYmUwNDAyYTE2MmI1Njk2YzA3ZmY0ZjQ5ZDgzYTJiNjQ1Mjc3ODY2MGZjNTc3MDMzNjFlMTgzNWI1OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161" style="border-width:0" width="1400" height="800" frameborder="0" scrolling="no"></iframe>
-        </div>
         <div class="cssLogos">
             <div class="cssMathimataLogo">
                 <img style="top: 50px; left: 50px; position: absolute;" src="~/images/lessons.png">
@@ -43,7 +34,6 @@
                 <img style="top: 50px; left: 50px; position: absolute;" src="~/images/school.png">
             </div>
         </div>
-        
         <span class="cssSxolesTitle">Σχολές</span>
         <span class="cssMathimataTitle">Μαθήματα</span>
         <span class="cssKathigitesTitle">Καθηγητές</span>
@@ -52,61 +42,24 @@
         <span class="cssMathimataText">Βρείτε τα μαθήματά σας! Επιλέξτε το μάθημα που σας ενδιαφέρει και δείτε το πρόγραμμα  και όλες τις σχετικές πληροφορίες.</span>
         <span class="cssKathigitesText">Βρείτε τους καθηγητές σας! Επιλέξτε τους καθηγητές που σας ενδιαφέρουν και δείτε το πρόγραμμά τους, ποια μαθήματα διδάσκουν και άλλες σχετικές πληροφορίες.</span>
         <span class="cssImerologioText">Φτιάξτε το ημερολόγιό σας! Επιλέξτε όλα τα events που σας ενδιαφέρουν και αποθηκεύστε τα απευθείας στο προσωπικό σας Google Calendar.</span>
-        
-
     </div>
     <div style="z-index: -1;" class="cssPlaisio">
         <div class="cssSB">
             <div class="cssSBLesson">
                 <input class="cssLesson" type="text" placeholder="Επιλέξτε Μάθημα..">
-
             </div>
             <div class="cssSBUni">
                 <input class="cssUni" type="text" placeholder="Επιλέξτε Σχολή..">
-
             </div>
             <div class="cssSBDates">
                 <input class="cssDates" type="date">
-
             </div>
             <div class="cssSBSearch">
                 <img style="top: 10px; left: 10px; position: absolute;" src="~/images/search.png">
             </div>
         </div>
-
-
     </div>
-    <div class="cssHeader">
-        @Html.Partial("Burgermenu")
-        <div class="cssEgrafi">
-
-            <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
-        </div>
-        <div class="cssSindesi">
-
-            <span style="width:100%; min-width: 30%; max-width: 8%; top: 10px; left: 33%; position: absolute; ">Σύνδεση</span>
-        </div>
-        <div class="cssUnicalendar">
-
-            <span style="width: 65px; top: 3px; left: 49px; position: absolute;">UniCalendar</span>
-
-            <div class="cssLogo"></div>
-
-
-        </div>
-    </div>
-    <div class="cssFooter">
-
-        <div class="cssFacebook">
-            <a href="http://www.facebook.com" title="facebook" class="fa fa-facebook" target="_blank">  </a>
-        </div>
-        <div class="cssInsta">
-            <a href="http://www.instagram.com" title="instgram" class="fa fa-instagram" target="_blank"></a>
-        </div>
-        <div class="cssTwitter">
-            <a href="http://www.twitter.com" title="twitter" class="fa fa-twitter" target="_blank"></a>
-        </div>
-
-    </div>
+    @Html.Partial("Header")
+    @Html.Partial("Footer")
 </body>
 </html>

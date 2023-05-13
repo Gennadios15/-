@@ -9,26 +9,24 @@
     <link href="~/css/header.css" rel="stylesheet" />
     <title>UniCalendar</title>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script async defer src="~/js/Authorize.js"></script>
 
 </head>
 <body>
     <div class="cssHeader">
-        
+        @Html.Partial("Burgermenu")
         <div class="cssEgrafi">
-
             <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
         </div>
         <div class="cssSindesi">
-
-            <span style="width:100%; min-width: 30%; max-width: 8%; top: 10px; left: 33%; position: absolute; ">Σύνδεση</span>
+            <button id="authorize_button" onclick="handleAuthClick()">Sign In</button>
+            <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
         </div>
         <div class="cssUnicalendar">
-
             <span style="width: 65px; top: 3px; left: 49px; position: absolute;">UniCalendar</span>
-
             <div class="cssLogo"></div>
-
-
         </div>
     </div>
 </body>
