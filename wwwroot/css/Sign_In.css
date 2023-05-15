@@ -95,7 +95,7 @@ section .contentSI .formSI .inputSI span {
     margin-bottom: 5px;
     display: inline-block;
     color: #000000;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1px;
     
 }

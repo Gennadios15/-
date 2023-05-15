@@ -37,12 +37,17 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-        public IActionResult HeaderLogIn()
+        public IActionResult Footer()
         {
             return View();
         }
 
-        public IActionResult Footer()
+        public IActionResult Sign_In()
+        {
+            return View();
+        }
+
+        public IActionResult Sign_Up()
         {
             return View();
         }
