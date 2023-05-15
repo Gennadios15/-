@@ -47,7 +47,7 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-        public IActionResult Index1()
+        public IActionResult GETevents()
         {
             return View();
         }

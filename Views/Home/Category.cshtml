@@ -5,11 +5,18 @@
 <html>
 <head>
     <title>Κατηγορίες</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>x
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/category.css"/>
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/css/header.css" />
+    <link rel="stylesheet" href="~/css/Burgermenu.css"/>
+    <link rel="stylesheet" href="~/css/home.css"/>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
     <script src="~/js/Burgermenu.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script async defer src="~/js/Authorize.js"></script>
 </head>
 <body>
     <p class="cssTitle">Επιλέξτε κατηγορία μαθημάτων:</p>
@@ -103,7 +110,7 @@
             <p class="txtTourism">Τουρισμός</p>
         </div>
     </div>
-    @Html.Partial("Header")
-    @Html.Partial("Footer")
+    @await Html.PartialAsync("Header")
+    @await Html.PartialAsync("Footer")
 </body>
 </html>

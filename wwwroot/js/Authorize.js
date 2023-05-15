@@ -1,97 +1,95 @@
 ﻿const CLIENT_ID = '830898581755-jcl182s380a54u3g2ampim9dgmnp0bkr.apps.googleusercontent.com';
-const API_KEY = 'AIzaSyAEJXw1Y26rqxwvxkDQvxNYOvWFn22FhEY';
-
-// Discovery doc URL for APIs used by the quickstart
+const API_KEY = 'YOUR_API_KEY';
 const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
-
-// Authorization scopes required by the API; multiple scopes can be
-// included, separated by spaces.
 const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
 
 let tokenClient;
 let gapiInited = false;
 let gisInited = false;
 
-document.getElementById('authorize_button').style.visibility = 'hidden';
-document.getElementById('signout_button').style.visibility = 'hidden';
-
-/**
-    * Callback after api.js is loaded.
-    */
-function gapiLoaded() {
-    gapi.load('client', initializeGapiClient);
-}
-
-/**
-    * Callback after the API client is loaded. Loads the
-    * discovery doc to initialize the API.
-    */
-async function initializeGapiClient() {
-    await gapi.client.init({
-        apiKey: API_KEY,
-        discoveryDocs: [DISCOVERY_DOC],
-    });
-    gapiInited = true;
-    maybeEnableButtons();
-}
-
-/**
-    * Callback after Google Identity Services are loaded.
-    */
-function gisLoaded() {
-    tokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: CLIENT_ID,
-        scope: SCOPES,
-        callback: '', // defined later
-    });
-    gisInited = true;
-    maybeEnableButtons();
-}
-
-/**
-    * Enables user interaction after all libraries are loaded.
-    */
-function maybeEnableButtons() {
-    if (gapiInited && gisInited) {
-        document.getElementById('authorize_button').style.visibility = 'visible';
+function checkSignInState() {
+    const accessToken = localStorage.getItem('accessToken');
+    console.log('Access Token:', accessToken);
+    if (accessToken) {
+        document.getElementById('authorize_button').style.display = 'none';
+        document.getElementById('signout_button').style.display = 'inline';
+    } else {
+        document.getElementById('authorize_button').style.display = 'inline';
+        document.getElementById('signout_button').style.display = 'none';
     }
 }
 
-/**
-    *  Sign in the user upon button click.
-    */
+function gapiLoaded() {
+    if (!gapiInited) {
+        gapi.load('client', initializeGapiClient);
+    }
+}
+
+async function initializeGapiClient() {
+    if (!gapiInited) {
+        await gapi.client.init({
+            apiKey: API_KEY,
+            discoveryDocs: [DISCOVERY_DOC],
+        });
+        gapiInited = true;
+        maybeEnableButtons();
+    }
+}
+
+function gisLoaded() {
+    if (!gisInited) {
+        tokenClient = google.accounts.oauth2.initTokenClient({
+            client_id: CLIENT_ID,
+            scope: SCOPES,
+            callback: '', // defined later
+        });
+        gisInited = true;
+        maybeEnableButtons();
+    }
+}
+
+function maybeEnableButtons() {
+    if (gapiInited && gisInited) {
+        checkSignInState();
+        document.getElementById('authorize_button').style.display = 'inline';
+    }
+}
+
 function handleAuthClick() {
     tokenClient.callback = async (resp) => {
         if (resp.error !== undefined) {
             throw (resp);
         }
-        document.getElementById('signout_button').style.visibility = 'visible';
-        document.getElementById('authorize_button').style.visibility = 'hidden';
+        localStorage.setItem('accessToken', resp.access_token);
+        checkSignInState();
         await listUpcomingEvents();
     };
 
     if (gapi.client.getToken() === null) {
-        // Prompt the user to select a Google Account and ask for consent to share their data
-        // when establishing a new session.
         tokenClient.requestAccessToken({ prompt: 'consent' });
     } else {
-        // Skip display of account chooser and consent dialog for an existing session.
         tokenClient.requestAccessToken({ prompt: '' });
     }
 }
 
-/**
-    *  Sign out the user upon button click.
-    */
 function handleSignoutClick() {
-    const token = gapi.client.getToken();
+    const token = localStorage.getItem('accessToken');
     if (token !== null) {
-        google.accounts.oauth2.revoke(token.access_token);
-        gapi.client.setToken('');
-        document.getElementById('authorize_button').style.visibility = 'visible';
-        document.getElementById('signout_button').style.visibility = 'hidden';
+        google.accounts.oauth2.revoke(token);
+        localStorage.removeItem('accessToken');
+        checkSignInState();
     }
 }
 
+function listUpcomingEvents() {
+    if (sessionStorage.getItem('accessToken') !== null) {
+        // Code to list upcoming events
+        // Add your implementation here
+    } else {
+        console.log('Access Token is null. Cannot list upcoming events.');
+    }
+}
 
-
+window.onload = function () {
+    checkSignInState();
+};

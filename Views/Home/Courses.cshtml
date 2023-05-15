@@ -8,38 +8,43 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/courses.css"/>
-    <script src="~/js/Burgermenu.js"></script>
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/css/header.css" />
+    <link rel="stylesheet" href="~/css/Burgermenu.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
+    <script src="~/js/Burgermenu.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script async defer src="~/js/Authorize.js"></script>
 </head>
 <body>
-    <div>
-        <div class="divFilters">
-            <div class="divTitle">
-                <img class="imgFiltra" src="~/images/filters.png">
-                <p class="txtfiltra">Φίλτρα</p>
-            </div>
-            <div class="divKatigoria">
-                <p class="cssTxtTitles">Κατηγορία</p>
-            </div>
-            <div class="divHmerEna">
-                <p class="cssTxtTitles">Ημερομηνία Έναρξης (από)</p>
-            </div>
-            <div class="divHmerLiksi">
-                <p class="cssTxtTitles">Ημερομηνία Λήξης (μέχρι)</p>
-            </div>
-            <div class="divDiarkeia">
-                <p class="cssTxtTitles">Διάρκεια</p>
-            </div>
-            <div class="divExamino">
-                <p class="cssTxtTitles">Εξάμηνο</p>
-            </div>
-            <div class="divKathigites">
-                <p class="cssTxtTitles">Καθηγητές</p>
-            </div>
+    <div class="divFilters">
+        <div class="divTitle">
+            <img class="imgFiltra" src="~/images/filters.png">
+            <p class="txtfiltra">Φίλτρα</p>
+        </div>
+        <div class="divKatigoria">
+            <p class="cssTxtTitles">Κατηγορία</p>
+        </div>
+        <div class="divHmerEna">
+            <p class="cssTxtTitles">Ημερομηνία Έναρξης (από)</p>
+        </div>
+        <div class="divHmerLiksi">
+            <p class="cssTxtTitles">Ημερομηνία Λήξης (μέχρι)</p>
+        </div>
+        <div class="divDiarkeia">
+            <p class="cssTxtTitles">Διάρκεια</p>
+        </div>
+        <div class="divExamino">
+            <p class="cssTxtTitles">Εξάμηνο</p>
+        </div>
+        <div class="divKathigites">
+            <p class="cssTxtTitles">Καθηγητές</p>
         </div>
     </div>
     <p class="cssMathimatatxt">Μαθήματα</p>
-    @Html.Partial("Header")
-    @Html.Partial("Footer")
+    @await Html.PartialAsync("Header")
+    @await Html.PartialAsync("Footer")
 </body>
 </html>

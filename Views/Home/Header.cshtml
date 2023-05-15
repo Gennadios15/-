@@ -5,7 +5,6 @@
 <html>
 <head>
     <title>UniCalendar</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <link rel="stylesheet" href="~/css/header.css"/>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
@@ -14,7 +13,7 @@
 </head>
 <body>
     <div class="cssHeader">
-        @Html.Partial("Burgermenu")
+        @await Html.PartialAsync("Burgermenu")
         <div class="cssEgrafi">
             <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
         </div>
