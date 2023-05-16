@@ -73,3 +73,21 @@ body {
   top: -10px;
   right:60px;
 }
+
+.authorize_button {
+    width: 100%;
+    min-width: 30%;
+    max-width: 8%;
+    top: 10px;
+    left: 33%;
+    position: absolute;
+}
+
+.signout_button {
+    width: 100%;
+    min-width: 30%;
+    max-width: 8%;
+    top: 10px;
+    left: 33%;
+    position: absolute;
+}

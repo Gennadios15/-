@@ -12,15 +12,29 @@
     line-height: 20px;
 }
 
-.categoryButons{
-    position: fixed;
-    width: 100%;
-    min-width: 1300px;
+p {
+    position: absolute;
+    width: 243px;
+    height: 22px;
+    left: 50px;
+    top: 80px;
+    align-items: center;
+}
+
+.categoryButons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
     height: 1000px;
     left: 0%;
     top: 0%;
-    z-index:-1;
+    z-index: -1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .humanities{
@@ -44,21 +58,6 @@
 
 }
 
-.txtHumanities{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 0px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .agriculture{
     position: absolute;
     width: 145px;
@@ -80,20 +79,6 @@
     border: none;
 }
 
-.txtAgriculture{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 10px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
 .media{ 
 
     position: absolute;
@@ -118,21 +103,6 @@
 
 }
 
-.txtMedia{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 5px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .business{      
     position: absolute;
     width: 243px;
@@ -153,22 +123,6 @@
     border-radius: 20px;
     border: none;
 
-}
-
-.txtBusiness{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: -40px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    
 }
 
 .education{
@@ -194,21 +148,6 @@
 
 }
 
-.txtEducation{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 44px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .physedu{
 
     position: absolute;
@@ -230,21 +169,6 @@
     border-radius: 20px;
     border: none;
 
-}
-
-.txtPhysedu{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 0px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
 }
 
 .science {
@@ -271,21 +195,6 @@
 
 }
 
-.txtScience{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 20px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .medicine{
 
     position: absolute;
@@ -307,21 +216,6 @@
     border-radius: 20px;
     border: none;
 
-}
-
-.txtMedicine{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 55px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
 }
 
 .engineering{
@@ -347,21 +241,6 @@
 
 }
 
-.txtEngineering{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 50px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .law {
 
     position: absolute;
@@ -383,21 +262,6 @@
     border-radius: 20px;
     border: none;
 
-}
-
-.txtLaw{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 60px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
 }
 
 .finance{
@@ -423,21 +287,6 @@
 
 }
 
-.txtFinance{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 0px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .computer{
 
     position: absolute;
@@ -459,21 +308,6 @@
     border-radius: 20px;
     border: none;
 
-}
-
-.txtComputer{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 0px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
 }
 
 .arts{
@@ -499,21 +333,6 @@
 
 }
 
-.txtArts{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 63px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
-}
-
 .tourism{
 
     position: absolute;
@@ -536,19 +355,4 @@
     border-radius: 20px;
     border: none;
 
-}
-
-.txtTourism{
-    
-    position: absolute;
-    width: 243px;
-    height: 22px;
-    left: 50px;
-    top: 80px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    
 }

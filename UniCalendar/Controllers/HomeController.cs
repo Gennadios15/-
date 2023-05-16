@@ -1,7 +1,6 @@
-﻿using ImportData.Controllers;
+﻿using ImportData;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using UniCalendar.Models;
 
 namespace UniCalendar.Controllers
 {
@@ -39,19 +38,38 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-        public IActionResult HeaderLogIn()
-        {
-            return View();
-        }
-
         public IActionResult Footer()
         {
             return View();
         }
 
-        public IActionResult ImportEvents()
+        public IActionResult Sign_In()
         {
             return View();
+        }
+
+        public IActionResult Sign_Up()
+        {
+            return View();
+        }
+
+        public IActionResult GETevents()
+        {
+            return View();
+        }
+
+        public IActionResult mathima()
+        {
+            return View();
+        }
+
+        public IActionResult GETCalendars()
+        {
+            DBConnection dbConnection = new DBConnection();
+            var data = dbConnection.FetchData();
+
+            // Pass the data to the view or process it as needed
+            return View(data);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
