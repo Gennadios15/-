@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ImportData;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace UniCalendar.Controllers
@@ -60,6 +61,15 @@ namespace UniCalendar.Controllers
         public IActionResult mathima()
         {
             return View();
+        }
+
+        public IActionResult GETCalendars()
+        {
+            DBConnection dbConnection = new DBConnection();
+            var data = dbConnection.FetchData();
+
+            // Pass the data to the view or process it as needed
+            return View(data);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
