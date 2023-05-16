@@ -1,5 +1,5 @@
-user:FEFEdeefa1732!
+pass:FEFEdeefa1732!
 
-pass:admin1
+user:admin1
 
 Scaffold-DbContext "Server=unicalendar.mysql.database.azure.com;Database=unicalendar_db;User Id=admin1;Password=FEFEdeefa1732!;SslMode=Preferred;" Pomelo.EntityFrameworkCore.MySql -OutputDir Models
