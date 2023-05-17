@@ -5,8 +5,11 @@
 <html>
 <head>
     <title>UniCalendar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/header.css"/>
     <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
+    <script src="~/js/Burgermenu.js"></script>
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
     <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <script async defer src="~/js/Authorize.js"></script>
@@ -14,17 +17,13 @@
 <body>
     <div class="cssHeader">
         @await Html.PartialAsync("Burgermenu")
-        <div class="cssEgrafi">
-            <span style="width: 30%; top: 10px; left: 33%; position: absolute;">Εγγραφή</span>
-        </div>
-        <div class="cssSindesi">
-            <button id="authorize_button" onclick="handleAuthClick()">Sign In</button>
-            <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-        </div>
-        <div class="cssUnicalendar">
-            <span style="width: 65px; top: 3px; left: 49px; position: absolute;">UniCalendar</span>
-            <div class="cssLogo"></div>
-        </div>
+        <button class="cssSindesi" id="authorize_button" onclick="handleAuthClick()">Σύνδεση</button>
+        <button class="cssEgrafi" id="signup_button">Εγγραφή</button>
+        <button class="cssEgrafi" id="signout_button" onclick="handleSignoutClick()">Αποσύνδεση</button>
+        </>
+        <div class="cssUnicalendar1">Uni</div>
+        <div class="cssUnicalendar2">Calendar</div>
+        <div class="cssLogo"></div>
     </div>
 </body>
 </html>

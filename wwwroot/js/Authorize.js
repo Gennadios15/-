@@ -12,9 +12,11 @@ function checkSignInState() {
     console.log('Access Token:', accessToken);
     if (accessToken) {
         document.getElementById('authorize_button').style.display = 'none';
+        document.getElementById('signup_button').style.display = 'none';
         document.getElementById('signout_button').style.display = 'inline';
     } else {
         document.getElementById('authorize_button').style.display = 'inline';
+        document.getElementById('signup_button').style.display = 'inline';
         document.getElementById('signout_button').style.display = 'none';
     }
 }

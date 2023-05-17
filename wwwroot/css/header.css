@@ -23,7 +23,7 @@ body {
   max-width: 8%;
   height: 35px;
   position: absolute;
-  top: 24px;
+  top: 22.5px;
   left: 90%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -40,7 +40,7 @@ body {
   max-width: 8%;
   height: 35px;
   position: absolute;
-  top: 24px;
+  top: 22.5px;
   left: 81.6%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -50,28 +50,38 @@ body {
   background: rgba(255,255,255,1);
   text-align: center;
 }
-.cssUnicalendar {
+.cssUnicalendar1 {
   width: 114px;
   height: 39px;
   position: absolute;
   top: 21px;
-  left: 44%;
+  left: 50%;
   color: rgba(255,255,255,1);
   font-weight: Bold;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
 }
-
+.cssUnicalendar2 {
+    width: 114px;
+    height: 39px;
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    color: rgba(255,255,255,1);
+    font-weight: Bold;
+    font-size: 18px;
+    text-align: left;
+}
 .cssLogo {
-  width: 43px;
-  height: 48px;
-  background: url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: absolute;
-  top: -10px;
-  right:60px;
+    width: 75px;
+    height: 80px;
+    position: absolute;
+    top: 2px;
+    left: 46.5%;
+    background: url("../images/logo_adopse.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .authorize_button {

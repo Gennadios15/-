@@ -313,7 +313,7 @@ img {
 }
 
 .wrapper {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -322,7 +322,7 @@ img {
     height: 29px;
     width: 29px;
     right: 60px;
-    margin-top: 35px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
