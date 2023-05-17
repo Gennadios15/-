@@ -8,9 +8,9 @@
 
   <ItemGroup>
     <None Remove="Properties\launchSettings.json" />
-    <None Remove="Properties\PublishProfiles\UniCalendar.pubxml" />
+<!--    <None Remove="Properties\PublishProfiles\UniCalendar.pubxml" />  -->
   </ItemGroup>
-
+<!--
   <ItemGroup>
     <_WebToolingArtifacts Remove="Properties\PublishProfiles\UniCalendar.pubxml" />
   </ItemGroup>
@@ -20,7 +20,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
+-->
   <ItemGroup>
     <PackageReference Include="Google.Apis.Calendar.v3" Version="1.60.0.3017" />
     <PackageReference Include="Google.Apis.Core" Version="1.60.0" />
