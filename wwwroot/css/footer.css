@@ -12,6 +12,7 @@ body {
     background: linear-gradient(rgba(56,132,222,1), rgba(96,181,229,1));
     position:absolute;
     top:200%;
+    left:0%;
 }
   .cssFacebook {
     width: 54px;
