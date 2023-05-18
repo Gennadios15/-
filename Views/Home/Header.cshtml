@@ -13,14 +13,14 @@
     <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
     <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <script async defer src="~/js/Authorize.js"></script>
+    <script async defer src="~/js/site.js"></script>
 </head>
 <body>
     <div class="cssHeader">
         @await Html.PartialAsync("Burgermenu")
-        <button class="cssSindesi" id="authorize_button" onclick="handleAuthClick()">Σύνδεση</button>
+        <button class="cssSindesi" id="authorize_button">Σύνδεση</button>
         <button class="cssEgrafi" id="signup_button">Εγγραφή</button>
         <button class="cssEgrafi" id="signout_button" onclick="handleSignoutClick()">Αποσύνδεση</button>
-        </>
         <div class="cssUnicalendar1">Uni</div>
         <div class="cssUnicalendar2">Calendar</div>
         <div class="cssLogo"></div>

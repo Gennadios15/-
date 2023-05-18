@@ -5,6 +5,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="~/css/Sign_Up.css">
+    <script async defer src="~/js/site.js"></script>
 </head>
 <body>
     <section>
@@ -25,7 +26,7 @@
             <div class="formSI">
                 <h2>Δημιουργήστε λογαριασμό</h2>
                 <p>Εγγραφείτε δωρεάν και οργανώστε το πραγραμμά σας</p>
-                <form>
+                <form id="signInForm">
                     <div class="inputSI">
                         <span>Όνομα</span>
                         <input type="text" name="">
@@ -47,7 +48,7 @@
                         <input type="password" name="">
                     </div>
                     <div class="inputSI">
-                        <input type="submit" value="Εγγραφή" name="">
+                        <input id="redirect" type="submit" value="Εγγραφή">
                     </div>
                     <div class="inputSI">
                         <p style="text-align: center;">Με την εγγραφή σας αποδέχεστε τους <a href="#">Όρους και Προυποθέσεις</a></p>

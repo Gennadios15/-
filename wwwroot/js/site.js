@@ -1,4 +1,17 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿document.getElementById('signup_button').addEventListener('click', function () {
+    window.location.href = '/Home/Sign_Up';
+});
 
-// Write your JavaScript code.
+document.getElementById('authorize_button').addEventListener('click', function () {
+    window.location.href = '/Home/Sign_In';
+});
+
+document.getElementById('signInForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default submit behavior
+
+    // Submit the form using JavaScript
+    this.submit();
+
+    // Redirect to the home page
+    window.location.href = '/Home/Index';
+});

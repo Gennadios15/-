@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial scale 1.0">
     <script src="https://kit.fontawesome.com/59a3805f50.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/Sign_In.css">
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script async defer src="~/js/Authorize.js"></script>
 </head>
 <body>
     <section>
@@ -27,19 +30,19 @@
                         <input type="password" name="">
                     </div>
                     <div class="remember">
-                        <p><input type="checkbox" name="">Να με θυμάσε                     <a href="#">Ξέχασα τον κωδικό μου</a></p>
+                        <p><input type="checkbox" name="">Να με θυμάσε<a href="#">Ξέχασα τον κωδικό μου</a></p>
                     </div>
                     <br>
                     <div class="inputSI">
                         <input type="submit" value="Σύνδεση" name="">
                     </div>
                     <div class="social-media">
-                        <a href="#" class="social-icon">
+                        <a href="#" class="social-icon" onclick="handleAuthClick()">
                             <i class="fa-brands fa-google"></i>
                         </a>
                     </div>
                     <div class="inputSI">
-                        <p>Δεν έχετε λογαριασμό?                 <a href="/Home/Sing_Up">Εγγραφείτε τώρα</a></p>
+                        <p>Δεν έχετε λογαριασμό?<a href="/Home/Sign_Up">Εγγραφείτε τώρα</a></p>
                     </div>
                 </form>
             </div>
@@ -60,6 +63,3 @@
     </section>
 </body>
 </html>
-
-
-
