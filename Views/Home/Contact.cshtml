@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/contact.css" rel="stylesheet">
+</head>
+    <body class="body">
+        
+        <div class="contactform">
+        <h3>Email</h3>
+        <input placeholder="example@email.com">
+        <h3>Θέμα</h3>
+        <input> 
+        <h3>Μήνυμα</h3>
+        <input class="sendmsg" id="myInput" >   
+        </div>
+        <div style="position: relative; min-width: 600px;" >
+            <button class="enroll">Αποστολή</button>
+        </div>
+    </body>
+    @await Html.PartialAsync("Header")
+    @await Html.PartialAsync("Footer")
+</html>

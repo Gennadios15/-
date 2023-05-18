@@ -63,6 +63,11 @@ namespace UniCalendar.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         public IActionResult GETCalendars()
         {
             DBConnection dbConnection = new DBConnection();
