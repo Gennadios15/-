@@ -63,7 +63,7 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-        public IActionResult mathima()
+        public IActionResult Course_Info()
         {
             return View();
         }
