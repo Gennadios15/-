@@ -1,5 +1,6 @@
 ﻿using ImportData;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace UniCalendar.Controllers
@@ -7,10 +8,12 @@ namespace UniCalendar.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly UnicalendarDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, UnicalendarDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -68,14 +71,28 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-        public IActionResult GETCalendars()
+        [HttpGet("api/data")]
+        public async Task<IActionResult> GetData(string category)
         {
-            DBConnection dbConnection = new DBConnection();
-            var data = dbConnection.FetchData();
+            // Fetch data from the database based on the category
+            var data = await FetchDataFromDatabase(category);
 
-            // Pass the data to the view or process it as needed
-            return View(data);
+            // Return the data as a JSON response
+            return Json(data);
         }
+
+
+        private async Task<List<Module>> FetchDataFromDatabase(string category)
+        {
+            // Fetch data from the database based on the category
+            var data = await _context.Modules
+                                     .Where(c => c.Category == category)
+                                     .ToListAsync();
+
+            return data;
+        }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

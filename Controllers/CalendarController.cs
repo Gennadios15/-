@@ -41,7 +41,7 @@ namespace ImportData.Controllers
                 var calendarId = _configuration["GoogleApi:CalendarId"];
                 var request = service.Events.List(calendarId);
                 request.SingleEvents = true;
-                request.MaxResults = 10;
+                request.MaxResults = 50;
                 request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
 
                 var events = request.Execute();

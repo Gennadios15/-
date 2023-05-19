@@ -19,3 +19,12 @@ document.getElementById('signInForm').addEventListener('submit', function (event
 function showMenu() {
     document.getElementById("slide").classList.toggle("showmenu");
 }
+
+
+
+
+
+//CATEGORY FUNCTION
+document.getElementById('categoryButons').addEventListener('click', function () {
+    window.location.href = '/Home/Sign_Up';
+});
