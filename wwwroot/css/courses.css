@@ -88,3 +88,18 @@ body{
     font-size: 24px;
     line-height: 20px;
   }
+
+
+.cssCourses {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 60%;
+    height: 30%;
+    border: 1px solid grey;
+    background-color: #e8e8e8;
+}
+
+.checked {
+    color: orange;
+}
