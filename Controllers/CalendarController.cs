@@ -4,6 +4,7 @@ using Google.Apis.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
+
 namespace ImportData.Controllers
 {
     public class CalendarController : Controller
@@ -15,7 +16,17 @@ namespace ImportData.Controllers
         {
             _configuration = configuration;
         }
-        public IActionResult CheckConnection()
+
+        private GoogleCredential GetServiceAccountCredential()
+        {
+            var keyFileStream = new FileStream(serviceAccountKeyFilePath, FileMode.Open, FileAccess.Read);
+            var credential = GoogleCredential.FromStream(keyFileStream)
+                .CreateScoped(new[] { CalendarService.Scope.Calendar });
+
+            return credential;
+        }
+
+        public IActionResult GetEvents()
         {
             try
             {
@@ -57,13 +68,61 @@ namespace ImportData.Controllers
             }
         }
 
-        private GoogleCredential GetServiceAccountCredential()
-        {
-            var keyFileStream = new FileStream(serviceAccountKeyFilePath, FileMode.Open, FileAccess.Read);
-            var credential = GoogleCredential.FromStream(keyFileStream)
-                .CreateScoped(new[] { CalendarService.Scope.Calendar });
 
-            return credential;
+
+
+
+
+
+
+
+
+
+        public IActionResult InsertEvents()
+        {
+            try
+            {
+                // Fetch events from the database
+                var dbConnection = new DBConnection();
+                List<Event> events = dbConnection.FetchData();
+
+                // Initialize Google Calendar API
+                var credential = GetServiceAccountCredential();
+                var service = new CalendarService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = _configuration["GoogleApi:ApplicationName"],
+                });
+                var calendarId = _configuration["GoogleApi:CalendarId"];
+
+                // Insert events into Google Calendar
+                foreach (var eventObj in events)
+                {
+                    var gEvent = new Google.Apis.Calendar.v3.Data.Event
+                    {
+                        Summary = eventObj.EventName,
+                        Description = eventObj.Eventdetails,
+                        Start = new Google.Apis.Calendar.v3.Data.EventDateTime
+                        {
+                            Date = eventObj.EventStartsOn.ToString("yyyy-MM-dd"),
+                        },
+                        End = new Google.Apis.Calendar.v3.Data.EventDateTime
+                        {
+                            Date = eventObj.EventsEndsOn.ToString("yyyy-MM-dd"),
+                        },
+                    };
+
+                    var request = service.Events.Insert(gEvent, calendarId);
+                    request.Execute();
+                }
+
+                return Json(new { success = true, message = "Events successfully inserted into Google Calendar." });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = "Error inserting events into Google Calendar: " + ex.Message });
+            }
         }
+
     }
 }

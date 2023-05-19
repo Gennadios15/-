@@ -28,3 +28,16 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "insertEvents",
+        pattern: "Calendar/InsertEvents",
+        defaults: new { controller = "Calendar", action = "InsertEvents" });
+
+    // ... (Other routes)
+});
+
