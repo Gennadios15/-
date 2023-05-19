@@ -15,3 +15,7 @@ document.getElementById('signInForm').addEventListener('submit', function (event
     // Redirect to the home page
     window.location.href = '/Home/Index';
 });
+
+function showMenu() {
+    document.getElementById("slide").classList.toggle("showmenu");
+}

@@ -53,17 +53,17 @@ namespace UniCalendar.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         public IActionResult GETevents()
         {
             return View();
         }
 
         public IActionResult mathima()
-        {
-            return View();
-        }
-
-        public IActionResult Contact()
         {
             return View();
         }
