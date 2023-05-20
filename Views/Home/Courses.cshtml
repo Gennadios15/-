@@ -17,6 +17,7 @@
     <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <script async defer src="~/js/authorize.js"></script>
     <script async defer src="~/js/site.js"></script>
+    <script async defer src="~/js/pagination.js"></script>
 </head>
 <body>
     <div class="divFilters">
@@ -44,26 +45,34 @@
         </div>
     </div>
     <p class="cssMathimatatxt">Μαθήματα</p>
-    <div class="cssCourses" id="courses">
-        <div style="left: 25px; position:absolute;" id="coursesName">
-            <p style="font-size: 18px;"><b>Δομημένος Προγραμματισμός</b></p>
+    <div id="coursesContainer"></div>
+        <div class="cssCourses" id="courses">
+            <div style="left: 25px; position:absolute;" id="coursesName">
+                <p style="font-size: 18px;"><b>Δομημένος Προγραμματισμός</b></p>
+            </div>
+            <div style="left: 25px; position:absolute; top:20%" id="coursesSxoli">
+                <p style="font-size: 12px;"><b>Σχολή: </b> Tμήμα Μηχανικών Πληροφορικής και Ηλεκτρονικών Συστημάτων</p>
+            </div>
+            <div style="left: 25px; position:absolute; top:30%" id="coursesCode">
+                <p style="font-size: 12px;"><b>Κωδικός Μαθήματος: </b> 1102</p>
+            </div>
+            <div style="left: 25px; position:absolute; top:40%" id="coursesTeacher">
+                <p style="font-size: 12px;"><b>Διδάσκοντες:</b> Γουλιάνας Κωνσταντίνος, Ασδρέ Κατερίνα</p>
+            </div>
+            <div style="left: 25px; position:absolute; top:70%" id="coursesRating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star" style="visibility: hidden;"></span>
+                <span class="fa fa-star" style="visibility: hidden;"></span>
+            </div>
         </div>
-        <div style="left: 25px; position:absolute; top:20%" id="coursesSxoli">
-            <p style="font-size: 12px;"><b>Σχολή: </b> Tμήμα Μηχανικών Πληροφορικής και Ηλεκτρονικών Συστημάτων</p>
-        </div>
-        <div style="left: 25px; position:absolute; top:30%" id="coursesCode">
-            <p style="font-size: 12px;"><b>Κωδικός Μαθήματος: </b> 1102</p>
-        </div>
-        <div style="left: 25px; position:absolute; top:40%" id="coursesTeacher">
-            <p style="font-size: 12px;"><b>Διδάσκοντες:</b> Γουλιάνας Κωνσταντίνος, Ασδρέ Κατερίνα</p>
-        </div>
-        <div style="left: 25px; position:absolute; top:70%" id="coursesRating">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star" style="visibility: hidden;"></span>
-            <span class="fa fa-star" style="visibility: hidden;"></span>
-        </div>
+    </div>
+    <div id="paginationBtns">
+        <button id="firstpage"onclick="goToPage(1)">First</button>
+        <button id="previouspage"onclick="goToPage(currentPage - 1)">Previous</button>
+        <button id="nextpage"onclick="goToPage(currentPage + 1)">Next</button>
+        <button id="lastpage"onclick="goToPage(totalPages)">Last</button>
     </div>
 </body>
 @await Html.PartialAsync("Header")
