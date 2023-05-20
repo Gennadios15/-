@@ -71,7 +71,25 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-      
+        [HttpGet("api/data")]
+        public async Task<IActionResult> GetData(string category)
+        {
+            // Fetch data from the database based on the category
+            var data = await FetchDataFromDatabase(category);
+
+            // Return the data as a JSON response
+            return Json(data);
+        }
+
+        private async Task<List<Module>> FetchDataFromDatabase(string category)
+        {
+            // Fetch data from the database based on the category
+            var data = await _context.Modules
+                                   //  .Where(c => c.Category == category)
+                                     .ToListAsync();
+
+            return data;
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
