@@ -1,6 +1,5 @@
-﻿using ImportData;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Diagnostics;
 
 namespace UniCalendar.Controllers
@@ -71,25 +70,28 @@ namespace UniCalendar.Controllers
             return View();
         }
 
-        [HttpGet("api/data")]
-        public async Task<IActionResult> GetData(string category)
+        public List<Module> GetAllCourses()
         {
-            // Fetch data from the database based on the category
-            var data = await FetchDataFromDatabase(category);
-
-            // Return the data as a JSON response
-            return Json(data);
+            return _context.Modules.ToList();
         }
 
-        private async Task<List<Module>> FetchDataFromDatabase(string category)
-        {
-            // Fetch data from the database based on the category
-            var data = await _context.Modules
-                                   //  .Where(c => c.Category == category)
-                                     .ToListAsync();
 
-            return data;
+        public string GetAllCoursesJson()
+        {
+            var courses = GetAllCourses();
+            return JsonConvert.SerializeObject(courses);
         }
+
+        [HttpGet]
+        public IActionResult GetAllCoursesFinal()
+        {
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            var coursesJson = GetAllCoursesJson();
+            return Content(coursesJson, "application/json");
+        }
+
+
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
