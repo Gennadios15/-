@@ -10,10 +10,3 @@ function showMenu() {
     document.getElementById("slide").classList.toggle("showmenu");
 }
 
-
-
-
-
-//LOAD COURSES FROM DATABSE FUNCTION
-
-

@@ -11,6 +11,7 @@ async function fetchCourses(url) {
             return;
         }
         const data = await response.json();
+        console.log("Fetched courses:", data); // Add this line to log the fetched data
         return data; // Return the fetched data
     } catch (error) {
         console.error("An error occurred while fetching courses:", error);
@@ -21,6 +22,8 @@ async function fetchCourses(url) {
 
 
 function renderPage(pageNumber) {
+    console.log(`Rendering page ${pageNumber}`); // Log the rendered page number
+
     // Get the entries for the given page number
     const pageEntries = paginatedEntries[pageNumber - 1];
 
@@ -37,7 +40,7 @@ function renderPage(pageNumber) {
         <p style="font-size: 12px;"><b>Κωδικός Μαθήματος: </b>${entry.idModules}</p>
       </div>
       <div style="left: 25px; position:absolute; top:40%" id="coursesTeacher">
-        <p style="font-size: 12px;"><b>Διδάσκοντες:</b> ${entry.ModuleLeader.join(", ")}</p>
+        <p style="font-size: 12px;"><b>Διδάσκοντες:</b> ${entry.ModuleLeader}</p>
       </div>
       <div style="left: 25px; position:absolute; top:70%" id="coursesRating">
         ${renderRating(entry.Rating)}
@@ -45,10 +48,18 @@ function renderPage(pageNumber) {
     </div>
   `).join("");
 
+    console.log(`Generated HTML content: ${entriesHtml}`); // Log the generated HTML content
+
     // Update the courses container with the entries HTML
     const coursesContainer = document.getElementById("coursesContainer");
-    coursesContainer.innerHTML = entriesHtml;
+    if (coursesContainer) {
+        coursesContainer.innerHTML = entriesHtml;
+    } else {
+        console.error('coursesContainer not found'); // Log an error if the coursesContainer is not found
+    }
 }
+
+
 
 function renderRating(rating) {
     const fullStar = '<span class="fa fa-star"></span>';
@@ -70,11 +81,14 @@ function renderRating(rating) {
 let currentPage = 1;
 
 function goToPage(pageNumber) {
+    console.log(`Going to page ${pageNumber}`); // Add this line to log the goToPage function call
+
     if (pageNumber < 1 || pageNumber > totalPages) return;
 
     currentPage = pageNumber;
     renderPage(currentPage);
 }
+
 
 function init() {
     fetchCourses('http://localhost:7043/Home/GetAllCoursesFinal').then(courses => {
@@ -87,3 +101,7 @@ function init() {
 
 // Call the init function when the page has loaded
 window.addEventListener("DOMContentLoaded", init);
+window.currentPage = currentPage;
+window.totalPages = totalPages;
+window.goToPage = goToPage;
+

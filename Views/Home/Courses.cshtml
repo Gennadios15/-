@@ -68,10 +68,10 @@
             </div>
         </div>
     <div id="paginationBtns">
-        <button id="firstpage"onclick="goToPage(1)">First</button>
-        <button id="previouspage"onclick="goToPage(currentPage - 1)">Previous</button>
-        <button id="nextpage"onclick="goToPage(currentPage + 1)">Next</button>
-        <button id="lastpage"onclick="goToPage(totalPages)">Last</button>
+        <button id="firstpage" onclick="goToPage(1)">First</button>
+        <button id="previouspage" onclick="goToPage(window.currentPage - 1)">Previous</button>
+        <button id="nextpage" onclick="goToPage(window.currentPage + 1)">Next</button>
+        <button id="lastpage" onclick="goToPage(window.totalPages)">Last</button>
     </div>
 </body>
 @await Html.PartialAsync("Header")
