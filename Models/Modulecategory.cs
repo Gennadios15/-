@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UniCalendar.Models;
+﻿namespace UniCalendar.Models;
 
 public partial class Modulecategory
 {
@@ -9,7 +6,7 @@ public partial class Modulecategory
 
     public int IdCategory { get; set; }
 
-    public DateOnly SinceWhen { get; set; }
+    public DateTime SinceWhen { get; set; }
 
     public virtual Category IdCategoryNavigation { get; set; } = null!;
 

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UniCalendar.Models;
+﻿namespace UniCalendar.Models;
 
 public partial class Interest
 {

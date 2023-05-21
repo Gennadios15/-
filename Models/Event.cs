@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UniCalendar.Models;
+﻿namespace UniCalendar.Models;
 
 public partial class Event
 {
@@ -17,9 +14,9 @@ public partial class Event
 
     public string Eventdetails { get; set; } = null!;
 
-    public DateOnly EventStartsOn { get; set; }
+    public DateTime EventStartsOn { get; set; }
 
-    public DateOnly EventsEndsOn { get; set; }
+    public DateTime EventsEndsOn { get; set; }
 
     public virtual Lecturer IdlecturerNavigation { get; set; } = null!;
 

@@ -31,8 +31,8 @@ namespace ImportData
                             {
                                 EventName = reader["EventName"].ToString(),
                                 Eventdetails = reader["Eventdetails"].ToString(),
-                                EventStartsOn = DateOnly.FromDateTime((DateTime)reader["EventStartsOn"]),
-                                EventsEndsOn = DateOnly.FromDateTime((DateTime)reader["EventsEndsOn"])
+                                EventStartsOn = (DateTime)reader["EventStartsOn"],
+                                EventsEndsOn = (DateTime)reader["EventsEndsOn"]
                             };
                             results.Add(eventObj);
                         }

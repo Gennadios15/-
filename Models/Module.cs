@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UniCalendar.Models;
+﻿namespace UniCalendar.Models;
 
 public partial class Module
 {
@@ -11,7 +8,7 @@ public partial class Module
 
     public string ModuleDesc { get; set; } = null!;
 
-    public DateOnly CreatedSince { get; set; }
+    public DateTime CreatedSince { get; set; }
 
     public int TotalHours { get; set; }
 
