@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MySqlConnector;
 
 namespace ImportData
 {
@@ -15,28 +15,24 @@ namespace ImportData
 
             string query = "SELECT EventName,Eventdetails,EventStartsOn,EventsEndsOn FROM event WHERE GoogleCalendarID = 1";
 
-            List<Event> results = new List<Event>();
+            List<Event> results = new();
 
             using (var conn = new MySqlConnection(dbConnectionString))
             {
                 conn.Open();
 
-                using (var cmd = new MySqlCommand(query, conn))
+                using var cmd = new MySqlCommand(query, conn);
+                using var reader = cmd.ExecuteReader();
+                while (reader.Read())
                 {
-                    using (var reader = cmd.ExecuteReader())
+                    var eventObj = new Event
                     {
-                        while (reader.Read())
-                        {
-                            var eventObj = new Event
-                            {
-                                EventName = reader["EventName"].ToString(),
-                                Eventdetails = reader["Eventdetails"].ToString(),
-                                EventStartsOn = (DateTime)reader["EventStartsOn"],
-                                EventsEndsOn = (DateTime)reader["EventsEndsOn"]
-                            };
-                            results.Add(eventObj);
-                        }
-                    }
+                        EventName = reader["EventName"]?.ToString() ?? string.Empty,
+                        Eventdetails = reader["Eventdetails"]?.ToString() ?? string.Empty,
+                        EventStartsOn = (DateTime)reader["EventStartsOn"],
+                        EventsEndsOn = (DateTime)reader["EventsEndsOn"]
+                    };
+                    results.Add(eventObj);
                 }
             }
             return results;

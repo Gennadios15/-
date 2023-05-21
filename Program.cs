@@ -6,8 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<UnicalendarDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), ServerVersion.Parse("5.7.41-mysql")));
 
 // Add CORS configuration
 builder.Services.AddCors(options =>
@@ -57,11 +56,13 @@ app.UseEndpoints(endpoints =>
         name: "default",
         pattern: "{controller}/{action}/{id?}");
     endpoints.MapGet("/Home/GetAllCoursesFinalJson",
-        async context =>
+        context =>
         {
             context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
             // your logic here
+            return Task.CompletedTask;
         });
 });
+
 
 app.Run();

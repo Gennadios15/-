@@ -9,7 +9,7 @@ namespace ImportData.Controllers
 {
     public class CalendarController : Controller
     {
-        private string serviceAccountKeyFilePath = "./credential_service.json";
+        private readonly string serviceAccountKeyFilePath = "./credential_service.json";
         private readonly IConfiguration _configuration;
 
         public CalendarController(IConfiguration configuration)
