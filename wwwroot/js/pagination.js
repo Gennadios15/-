@@ -91,7 +91,7 @@ function goToPage(pageNumber) {
 
 
 function init() {
-    fetchCourses('http://localhost:7043/Home/GetAllCoursesFinal').then(courses => {
+    fetchCourses('http://unicalendar.azurewebsites.net/Home/GetAllCoursesFinal').then(courses => {
         allEntries = courses; // Set allEntries to the fetched courses
         totalPages = Math.ceil(allEntries.length / entriesPerPage); // Calculate the total number of pages
         paginatedEntries = Array.from({ length: totalPages }, (_, i) => allEntries.slice(i * entriesPerPage, (i * entriesPerPage) + entriesPerPage)); // Create an array of paginated entries
