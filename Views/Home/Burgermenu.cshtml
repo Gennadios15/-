@@ -5,15 +5,15 @@
     <link href="~/css/home.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="btn" onclick="showMenu()">
-                <img src="~/images/burgermenuwhite.svg">
+        <div class="wrapper">
+            <div class="container">
+                <div class="btn" onclick="showMenu()">
+                    <img src="~/images/burgermenuwhite.svg">
+                </div>
             </div>
         </div>
-    </div>
-    <ul class="menu" id="slide">
-        <li>
+        <ul class="menu" id="slide">
+            <li>
             <img style="float:left;  margin-right: 15px;" src="~/images/burgersearch.svg">
             <input style="margin-top: -4px" class="searchInput"  placeholder="Αναζήτηση">
         </li>
@@ -39,6 +39,18 @@
             <a href="/Home/Professor">
                 <img style="height:24px; width:24px;" src="~/images/burgerprofessor.svg">
                 <span>Καθηγητές</span>
+            </a>
+        </li>
+        <li class="hide">
+            <a href="#">
+                <img src="~/images/burgerlessons.svg">
+                <span>Τα μαθήματά μου</span>
+            </a>
+        </li>
+        <li class="hide">
+            <a href="#">
+                <img style="height:24px; width:24px;" src="~/images/burgerprofessor.svg">
+                <span>Το πρόγραμμά μου</span>
             </a>
         </li>
         <li>
