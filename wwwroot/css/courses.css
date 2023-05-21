@@ -90,15 +90,31 @@ body{
   }
 
 
-.cssCourses {
+#coursesContainer {
     position: absolute;
-    top: 150px;
-    left: 350px;
+    width: 1500px;
+    height: 800px;
+    left: 500px;
+    top: 200px;
+}
+
+
+.cssCourses {
+    position: relative;
     width: 60%;
     height: 30%;
     border: 1px solid grey;
     background-color: #e8e8e8;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
 }
+
+#coursesName, #coursesSxoli, #coursesCode, #coursesTeacher, #coursesRating {
+    margin-bottom: 10px;
+}
+
 
 .fa-star {
     color: orange;

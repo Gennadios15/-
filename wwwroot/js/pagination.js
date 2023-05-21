@@ -30,21 +30,21 @@ function renderPage(pageNumber) {
     // Create an HTML string for the entries
     const entriesHtml = pageEntries.map(entry => `
     <div class="cssCourses">
-      <div style="left: 25px; position:absolute;" id="coursesName">
-        <p style="font-size: 18px;"><b>${entry.ModuleName}</b></p>
-      </div>
-      <div style="left: 25px; position:absolute; top:20%" id="coursesSxoli">
-        <p style="font-size: 12px;"><b>Σχολή: </b>${entry.ModuleName}</p>
-      </div>
-      <div style="left: 25px; position:absolute; top:30%" id="coursesCode">
-        <p style="font-size: 12px;"><b>Κωδικός Μαθήματος: </b>${entry.idModules}</p>
-      </div>
-      <div style="left: 25px; position:absolute; top:40%" id="coursesTeacher">
-        <p style="font-size: 12px;"><b>Διδάσκοντες:</b> ${entry.ModuleLeader}</p>
-      </div>
-      <div style="left: 25px; position:absolute; top:70%" id="coursesRating">
-        ${renderRating(entry.Rating)}
-      </div>
+        <div id="coursesName">
+            <p style="font-size: 18px;"><b>${entry.ModuleName}</b></p>
+        </div>
+        <div id="coursesSxoli">
+            <p style="font-size: 12px;"><b>Σχολή: </b>${entry.ModuleName}</p>
+        </div>
+        <div id="coursesCode">
+            <p style="font-size: 12px;"><b>Κωδικός Μαθήματος: </b>${entry.idModules}</p>
+        </div>
+        <div id="coursesTeacher">
+            <p style="font-size: 12px;"><b>Διδάσκοντες:</b> ${entry.ModuleLeader}</p>
+        </div>
+        <div id="coursesRating">
+            ${renderRating(entry.Rating)}
+        </div>
     </div>
   `).join("");
 
