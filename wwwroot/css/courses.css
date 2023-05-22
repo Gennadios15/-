@@ -4,11 +4,10 @@ body {
 
 .divFilters {
     position: absolute;
-    left: auto;
+    left: 350px;
     top: 100px;
     width: 250px;
     height: 100%;
-    z-index: -1;
 }
 
 .txtfiltra {
@@ -83,7 +82,7 @@ body {
     position: absolute;
     width: 1500px;
     height: 800px;
-    left: 500px;
+    left: 600px;
     top: 200px;
 }
 
