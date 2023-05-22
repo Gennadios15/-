@@ -87,3 +87,6 @@ ul {
 .hide{
     display:none;
 }
+.showMyMenu{
+    display: block;
+}

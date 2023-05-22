@@ -10,3 +10,10 @@ function showMenu() {
     document.getElementById("slide").classList.toggle("showmenu");
 }
 
+
+function myMenu() {
+    console.log("Im in my menu");
+    
+    }
+
+
