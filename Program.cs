@@ -6,7 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<UnicalendarDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), ServerVersion.Parse("5.7.41-mysql")));
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), ServerVersion.Parse("5.7.41-mysql"),
+    mysqlOptions => mysqlOptions.EnableRetryOnFailure()));
 
 // Add CORS configuration
 builder.Services.AddCors(options =>
