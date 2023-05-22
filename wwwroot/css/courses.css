@@ -3,20 +3,18 @@ body{
 }
 .divFilters {
     position: absolute;
-    left: auto;
+    left: 350px;
     top: 100px;
-    left: 50px;
     width: 250px;
-    height: 100%;
-    z-index:-1;
-    
+    height: 100%;  
   }
+
   .txtfiltra{
     position: absolute;
     width: 94px;
     height: 16px;
     left: 45px;
-    top: -10px;
+    top: 12px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -30,42 +28,36 @@ body{
   }
 
   .divTitle{
-    border: 1px solid grey;
+    border: 0.5px solid grey;
     
-    height: 10%;
+    height: 5%;
   }
 
   .divKatigoria{
     border: 1px solid grey;
     
-    height: 40%;
+    height: 15%;
   }
   .divHmerEna{
     border: 1px solid grey;
     
-    height: 25%;
+    height: 15%;
   }
   .divHmerLiksi{
     border: 1px solid grey;
     
-    height: 25%;
+    height: 15%;
   }
   .divDiarkeia{
     border: 1px solid grey;
     
-    height: 40%;
-  }
-
-  .divExamino{
-    border: 1px solid grey;
-    
-    height: 40%;
+    height: 15%;
   }
 
   .divKathigites{
     border: 1px solid grey;
     
-    height: 50%;
+    height: 15%;
   }
 
   .cssTxtTitles{
@@ -79,8 +71,8 @@ body{
     position: absolute;
     width: 421px;
     height: 21px;
-    left: 45%;
-    top: 73px;
+    left: 35%;
+    top: 90px;
 
     font-family: 'Roboto';
     font-style: normal;
