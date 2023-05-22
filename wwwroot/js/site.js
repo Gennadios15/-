@@ -26,3 +26,10 @@ function togglePane(elementId, moreId, lessId, flag, shrinkSize, growSize) {
         moreElement.style.display = 'initial';
     }
 }
+
+function myMenu() {
+    console.log("Im in my menu");
+    
+    }
+
+

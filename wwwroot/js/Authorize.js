@@ -72,6 +72,8 @@ function handleAuthClick() {
     } else {
         tokenClient.requestAccessToken({ prompt: '' });
     }
+    document.getElementById("MyLessons").classList.toggle("showMyMenu");
+    document.getElementById("MyProgram").classList.toggle("showMyMenu");
 }
 
 function handleSignoutClick() {

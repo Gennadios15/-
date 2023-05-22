@@ -83,3 +83,10 @@ ul {
     text-decoration: none;
     display: block;
 }
+
+.hide{
+    display:none;
+}
+.showMyMenu{
+    display: block;
+}
