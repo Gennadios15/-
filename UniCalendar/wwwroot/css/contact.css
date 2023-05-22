@@ -1,0 +1,46 @@
+
+.input{
+    width: 500px;
+    height: 50px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #BABABA;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-indent: 0;
+}
+
+.enroll{
+    position: absolute;
+    float:right;
+    right: 368px;
+    margin-top: 70px;
+    width: 180px;
+    height: 47.98px;
+    box-sizing: border-box;
+    background: #3884DE;
+    border: 1px solid #BABABA;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    top:700px;
+    color:white;
+    margin-block: auto 20px;
+}
+
+.enroll:hover{
+    background: #3774de;
+}
+
+.sendmsg{
+    width: 757px;
+    height: 297px;
+}
+
+.contactform{
+    position:absolute;
+    margin-top: 70px;
+    left: 100px;
+    margin-left: 300px ;
+    width: 900px;
+}

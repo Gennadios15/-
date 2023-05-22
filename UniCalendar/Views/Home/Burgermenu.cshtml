@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>BurgerMenu</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/home.css" rel="stylesheet" />
+    <script async defer src="~/js/authorize.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container1">
+            <div class="btn" onclick="showMenu()">
+                <img src="~/images/burgermenuwhite.svg">
+            </div>
+        </div>
+    </div>
+    <ul class="menu" id="slide">
+        <li>
+            <img style="float:left;  margin-right: 15px;" src="~/images/burgersearch.svg">
+            <input style="margin-top: -4px" class="searchInput"  placeholder="Αναζήτηση">
+        </li>
+        <li>
+            <a href="/Home/Index">
+                <img src="~/images/burgerhome.svg">
+                <span>Αρχική σελίδα</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Category">
+                <img src="~/images/burgerschool.svg">
+                <span>Σχολές</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Courses">
+                <img src="~/images/burgerlessons.svg">
+                <span>Μαθήματα</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Professor">
+                <img style="height:24px; width:24px;" src="~/images/burgerprofessor.svg">
+                <span>Καθηγητές</span>
+            </a>
+        </li>
+        <li id="MyLessons" class="hide">
+            <a href="#">
+                <img src="~/images/myLessons.svg">
+                <span>Τα μαθήματά μου</span>
+            </a>
+        </li>
+        <li id="MyProgram" class="hide">
+            <a href="#">
+                <img src="~/images/myProgram.svg">
+                <span>Το πρόγραμμά μου</span>
+            </a>
+        </li>
+        <li>
+            <a href="/Home/Contact">
+                <img src="~/images/burgercontactsupport.svg">
+                <span>Βοήθεια και επικοινωνία</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="~/images/burgerinfo.svg">
+                <span>Σχετικά με εμάς</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto';
+}
+
+.divFilters {
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    width: 250px;
+    height: 100%;
+}
+
+.txtfiltra {
+    position: absolute;
+    width: 94px;
+    height: 16px;
+    left: 45px;
+    top: -10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.imgFiltra {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.divTitle {
+    border: 1px solid grey;
+    height: 10%;
+}
+
+.divKatigoria {
+    border: 1px solid grey;
+    height: 15%;
+}
+
+.divHmerEna {
+    border: 1px solid grey;
+    height: 15%;
+}
+
+.divHmerLiksi {
+    border: 1px solid grey;
+    height: 15%;
+}
+
+.divDiarkeia {
+    border: 1px solid grey;
+    height: 15%;
+}
+
+.divKathigites {
+    border: 1px solid grey;
+    height: 15%;
+}
+
+.cssTxtTitles {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+}
+
+.cssMathimatatxt {
+    position: absolute;
+    width: 421px;
+    height: 21px;
+    left: 35%;
+    top: 90px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+
+#coursesContainer {
+    position: absolute;
+    width: 1500px;
+    height: 800px;
+    left: 600px;
+    top: 200px;
+}
+
+
+.cssCourses {
+    position: relative;
+    width: 60%;
+    height: 30%;
+    border: 1px solid grey;
+    background-color: #e8e8e8;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#coursesName, #coursesSxoli, #coursesCode, #coursesTeacher, #coursesRating {
+    margin-bottom: 10px;
+}
+
+
+.fa-star {
+    color: orange;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+    .pagination a {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 0 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        color: #333;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+        .pagination a:hover {
+            background-color: #e8e8e8;
+        }
+
+    .pagination .active {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+    }
+
+    .pagination .disabled {
+        background-color: #f8f8f8;
+        color: #ccc;
+        cursor: not-allowed;
+    }

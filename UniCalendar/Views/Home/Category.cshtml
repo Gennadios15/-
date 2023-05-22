@@ -1,0 +1,116 @@
+﻿@{
+    ViewData["Title"] = "Category";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Κατηγορίες</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/category.css"/>
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/css/header.css" />
+    <link rel="stylesheet" href="~/css/burgermenu.css"/>
+    <link rel="stylesheet" href="~/css/home.css"/>
+    <link rel="icon" href="~/images/calendar.png" type="image/x-icon">
+    <script src="~/js/site.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script async defer src="~/js/authorize.js"></script>
+</head>
+<body>
+    <p class="cssTitle">Επιλέξτε κατηγορία μαθημάτων:</p>
+    <div class="categoryButons" id="categoryButons">
+        <div class="humanities">
+            <button class="btnHumanities" id="humanitiesBtn" onclick="fetchData('humanitiesBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/humanities.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtHumanities">Ανθρωπιστικές Επιστήμες</p>
+        </div>
+        <div class="agriculture">
+            <button class="btnAgriculture" id="agricultureBtn" onclick="fetchData('agricultureBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/agriculture.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtAgriculture">Γεωργία & Δασοκομία</p>
+        </div>
+        <div class="media">
+            <button class="btnMedia" id="mediaBtn" onclick="fetchData('mediaBtn')">
+                <img style="left:15%; position:absolute;"  src="~/images/media.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtMedia">Δημοσιογραφία & Media</p>
+        </div>
+        <div class="business">
+            <button class="btnBusiness" id="BusinessBtn" onclick="fetchData('BusinessBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/business.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtBusiness">
+                Διοίκηση Επιχειρήσεων<br>
+                & <br>
+                Marketing
+            </p>
+        </div>
+        <div class="education">
+            <button class="btnEducation" id="EducationBtn" onclick="fetchData('EducationBtn')">
+                <img style="left:15%; position:absolute;" style="left:30%; position:absolute;" src="~/images/school.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtEducation">Εκπαίδευση</p>
+        </div>
+        <div class="physedu">
+            <button class="btnPhysedu" id="PhyseduBtn" onclick="fetchData('PhyseduBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/sports.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtPhysedu">Επιστήμη Φυσικής Αγωγής</p>
+        </div>
+        <div class="science">
+            <button class="btnScience" id="ScienceBtn" onclick="fetchData('ScienceBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/science.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtScience">Θετικές Επιστήμες</p>
+        </div>
+        <div class="medicine">
+            <button class="btnMedicine" id="MedicineBtn" onclick="fetchData('MedicineBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/medicine.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtMedicine">Ιατρική</p>
+        </div>
+        <div class="engineering">
+            <button class="btnEngineering" id="EngineeringBtn" onclick="fetchData('EngineeringBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/engineering.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtEngineering">Μηχανική </p>
+        </div>
+        <div class="law">
+            <button class="btnLaw" id="LawBtn" onclick="fetchData('LawBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/law.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtLaw">Νομική </p>
+        </div>
+        <div class="finance">
+            <button class="btnFinance" id="FinanceBtn" onclick="fetchData('FinanceBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/finance.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtFinance">Οικονομικές Επιστήμες</p>
+        </div>
+        <div class="computer">
+            <button class="btnComputer" id="ComputerBtn" onclick="fetchData('ComputerBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/computer.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtComputer">Πληροφορική & Τεχνολογία</p>
+        </div>
+        <div class="arts">
+            <button class="btnArts" id="ArtsBtn" onclick="fetchData('ArtsBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/arts.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtArts">Τέχνη</p>
+        </div>
+        <div class="tourism">
+            <button class="btnTourism" id="TourismBtn" onclick="fetchData('TourismBtn')">
+                <img style="left:15%; position:absolute;" src="~/images/tourism.png" alt="buttonpng" style="border: 0;" />
+            </button>
+            <p class="txtTourism">Τουρισμός</p>
+        </div>
+    </div>
+    @await Html.PartialAsync("Header")
+    @await Html.PartialAsync("Footer")
+</body>
+</html>

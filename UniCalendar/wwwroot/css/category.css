@@ -1,0 +1,358 @@
+.cssTitle{
+    position: absolute;
+    width: 373px;
+    height: 10px;
+    left: 42%;
+    top: 100px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+p {
+    position: absolute;
+    width: 243px;
+    height: 22px;
+    left: 50px;
+    top: 80px;
+    align-items: center;
+}
+
+.categoryButons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 1000px;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.humanities{
+    position: absolute;
+    width: 243px;
+    height: 143px;
+    left: 0%;
+    top: 220px;
+}
+
+.btnHumanities{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.agriculture{
+    position: absolute;
+    width: 145px;
+    height: 143px;
+    left: 22%;
+    top: 220px;
+}
+
+.btnAgriculture{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+}
+
+.media{ 
+
+    position: absolute;
+    width: 162px;
+    height: 132px;
+    left:42%;
+    top: 220px;
+
+}
+
+.btnMedia{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.business{      
+    position: absolute;
+    width: 243px;
+    height: 143px;
+    left: 62%;
+    top: 220px;
+}
+
+.btnBusiness{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 45px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.education{
+
+    position: absolute;
+    width: 145px;
+    height: 143px;
+    left: 82%;
+    top: 220px;
+}
+
+.btnEducation{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.physedu{
+
+    position: absolute;
+    width: 178px;
+    height: 134px;
+    left: 0%;
+    top: 401px;
+}
+
+.btnPhysedu{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.science {
+
+    position: absolute;
+    width: 145px;
+    height: 143px;
+    left: 22%;
+    top: 401px;
+
+}
+
+.btnScience{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.medicine{
+
+    position: absolute;
+    width: 178px;
+    height: 134px;
+    left: 42%;
+    top: 401px;
+}
+
+.btnMedicine{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.engineering{
+
+    position: absolute;
+    width: 243px;
+    height: 143px;
+    left: 62%;
+    top: 401px;
+}
+
+.btnEngineering{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.law {
+
+    position: absolute;
+    width: 145px;
+    height: 143px;
+    left: 82%;
+    top: 401px;
+}
+
+.btnLaw{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.finance{
+
+    position: absolute;
+    width: 178px;
+    height: 138px;
+    left: 12%;
+    top: 593px;
+}
+
+.btnFinance{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.computer{
+
+    position: absolute;
+    width: 178px;
+    height: 138px;
+    left: 32%;
+    top: 593px;
+}
+
+.btnComputer{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.arts{
+
+    position: absolute;
+    width: 243px;
+    height: 147px;
+    left: 52%;
+    top: 593px;
+}
+
+.btnArts{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.tourism{
+
+    position: absolute;
+    width: 145px;
+    height: 147px;
+    left: 72%;
+    top: 593px;
+
+}
+
+.btnTourism{
+    
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 40px;
+    top: 0px;
+    background: #E6E6E6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+
+}
